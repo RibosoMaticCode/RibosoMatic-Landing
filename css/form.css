@@ -1,0 +1,54 @@
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="tel"],
+.form input[type="date"],
+.form input[type="number"],
+.form input[type="datetime-local"],
+.form select,
+.form textarea{
+  border-radius: 3px;
+  font-size: .95em;
+  padding: 8px;
+  border: 1px solid #CCCCCC;
+  margin:6px 0;
+  width: calc(100% - 2px);
+  background-image: linear-gradient(to bottom, #FFF, #FBFBFB);
+  max-width: 100%;
+  margin-right: 2px;
+  font-family: Light;
+}
+
+.form input[type="text"]:focus,
+.form input[type="password"]:focus,
+.form select:focus,
+.form textarea:focus{
+	outline:0;
+	border:1px solid gray;
+}
+
+.form label{
+	display: block;
+  padding: 4px 0;
+  color:#000;
+  font-size: .9em;
+}
+.form label input[type="checkbox"]{
+  margin-right:5px;
+}
+label.label_side { /* En diseños donde label está ubicado a la izquierda */
+    margin: 6px 0;
+    padding: 8px 0;
+}
+.form p{
+  font-size:.9em;
+}
+input:disabled {
+    background-color: #f7f7f7!important;
+    background-image: none!important;
+}
+.form .title{
+  text-align: center;
+  font-size: 1.5em;
+  padding: 10px 0;
+}

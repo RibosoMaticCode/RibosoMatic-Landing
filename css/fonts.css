@@ -1,0 +1,12 @@
+@font-face{
+	font-family: Light;
+	src: url('../fonts/Metropolis-Light.otf');
+}
+@font-face{
+	font-family: Semibold;
+	src: url('../fonts/Metropolis-Medium.otf');
+}
+@font-face{
+	font-family: Bold;
+	src: url('../fonts/Metropolis-Bold.otf');
+}

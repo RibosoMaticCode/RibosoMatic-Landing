@@ -1,0 +1,473 @@
+@charset "UTF-8";
+/*
+Template Name: RibosoMatic Template Basic 1
+Template URI: https://github.com/jesusvld
+Author: RibosoMatic
+Author URI: https://www.ribosomatic.com
+Version: 1.0
+
+1. FONTS
+2. RESET
+3. SECTIONS
+3.1 INTRO
+3.2 FORMAT
+4. HEADER
+5. BANNER
+6. SERVICES
+7. CONTACT
+8. FOOTER
+
+*/
+
+/* 1. FONTS */
+@font-face{
+	font-family: Thin;
+	src: url('../fonts/Metropolis-Thin.otf');
+}
+@font-face{
+	font-family: Light;
+	src: url('../fonts/Metropolis-Light.otf');
+}
+@font-face{
+	font-family: RegularItalic;
+	src: url('../fonts/Metropolis-RegularItalic.otf');
+}
+@font-face{
+	font-family: Semibold;
+	src: url('../fonts/Metropolis-Medium.otf');
+}
+@font-face{
+	font-family: Bold;
+	src: url('../fonts/Metropolis-Bold.otf');
+}
+
+/* 2. RESET */
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	color:#252525;
+}
+body{
+	background-color:#fff;
+	font-family:Light;
+}
+a{
+	color:#03A9F4;
+	text-decoration:none;
+}
+a{
+	-webkit-transition:all 200ms linear;
+	-moz-transition:all 200ms linear;
+	-o-transition:all 200ms linear;
+	-ms-transition:all 200ms linear;
+	transition:all 200ms linear;
+}
+p{
+	padding:2px 0;
+}
+.clear::before{
+	display: table;
+    content: " ";
+}
+.clear::after{
+	display: table;
+    content: " ";
+	clear:both;
+}
+
+/* 3. SECTIONS */
+.wrap-container{
+    width: 100%;
+    position: relative;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.block-content{
+    padding: 80px 40px;
+}
+.block-content a {
+    background-color: #efefef;
+    padding: 0 4px;
+}
+.mt30{
+    margin-top: 30px;
+}
+.mt40{
+    margin-top: 40px;
+}
+.mb30{
+    margin-bottom: 30px;
+}
+.mb40{
+    margin-bottom: 40px;
+}
+.dialog{
+    max-width: 1000px;
+    display: none;
+}
+#website-wordpress,
+#widgets {
+    background-color: #f7f7f7;
+}
+
+/* 3.1 BLOCK INTRO */
+.block-intro h1 {
+    font-size: 2.8em;
+    font-family: 'Semibold';
+    margin-bottom: 30px;
+    text-align: center;
+}
+.block-intro h4 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.4em;
+    color: #969696;
+    font-family: 'Semibold';
+}
+.works{
+    padding:20px 0;
+}
+.works .slick-list{
+    padding: 10px 0;
+}
+.works img{
+    max-width: 100%;
+    display: block;
+    margin:0 auto;
+    box-shadow: 1px 1px 5px gray;
+    -webkit-transition:all 200ms linear;
+	-moz-transition:all 200ms linear;
+	-o-transition:all 200ms linear;
+	-ms-transition:all 200ms linear;
+	transition:all 200ms linear;
+}
+.works a {
+    background: none;
+    display: inline-block;
+    margin: 0 8%;
+    position: relative;
+    padding: 0;
+}
+.works a:hover img{
+    transform: scale(1.1);
+}
+.works a:hover .work-title{
+    top:80%;
+    opacity:1;
+    transform: scale(1.1);
+}
+.work-title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top:100%;
+    left: 0;
+    opacity:0;
+    font-family:Light;
+    color:#fff;
+    font-size: 1em;
+    z-index:1;
+    background-color:#1780ff;
+    padding:10px 0;
+    display:block;
+
+    -webkit-transition:all 200ms linear;
+	-moz-transition:all 200ms linear;
+	-o-transition:all 200ms linear;
+	-ms-transition:all 200ms linear;
+	transition:all 200ms linear;
+}
+
+/* 3.2 FORMAT */
+.align-center{
+    text-align: center;
+}
+
+.block-intro p {
+    font-size: 1.2em;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* 4. HEADER */
+.header {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    background: url('../img/bg-header.png');
+    background-repeat: repeat;
+}
+
+.header .container{
+    padding: 0 2%;
+    max-width: initial;
+}
+
+.logo {
+    max-width: 240px;
+    margin: 10px 5px;
+    float: left;
+}
+
+.btn-contact {
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.btn-link {
+    background-color: #1780ff!important;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px!important;
+    border-radius: 8px;
+    font-size: .95em;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    border:0;
+    cursor: pointer;
+    margin-right:10px;
+}
+
+.btn-link span {
+    color: #fff;
+    position: relative;
+    z-index: 1; 
+}
+
+.btn-link::after {
+    position: absolute;
+    content: "";
+    background: #1f569e;
+    top:100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-link:hover:after {
+    top: 0;
+}
+
+.btn-link:hover span {
+    text-decoration: none;
+}
+
+.btn-link::after{
+	-webkit-transition:all 200ms linear;
+	-moz-transition:all 200ms linear;
+	-o-transition:all 200ms linear;
+	-ms-transition:all 200ms linear;
+	transition:all 200ms linear;
+}
+
+/* 5. BANNER */
+.banner{
+    position: relative;
+}
+
+.banner .owl-theme .item img{
+    display: none;
+}
+
+.banner .owl-theme .item{
+    height: 100vh;
+}
+
+.overlay-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(34, 34, 34, 0.5);
+    opacity: .8;
+}
+
+.d-flex {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+}
+
+.wrap-caption {
+    position: absolute;
+    left: 8%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.caption-heading{
+    font-size: 60px;
+    font-weight: 700;
+    padding: 0;
+    color: #fff;
+    line-height: 1;
+    font-family: Bold;
+    margin: 10px 0;
+    text-shadow: 0 0 15px #2b2b2b;
+}
+
+.caption-supheading{
+    color: #ffeb3b;
+    margin: 10px 0;
+    font-size: 1.2em;
+    text-shadow: 0 0 10px #2b2b2b;
+}
+
+.custom-nav {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    height: auto;
+}
+
+.owl-prev, .owl-next {
+    position: absolute;
+    height: 100px;
+    color: inherit;
+    background: none;
+    border: none;
+    z-index: 100;
+    cursor: pointer;
+}
+
+i {
+    font-size: 2.5rem;
+    color: #cecece;
+}
+
+.owl-prev {
+    left: 3%;
+}
+
+.owl-next {
+    right: 3%;
+}
+
+/* 6. SERVICES */
+.service-block{
+    position:absolute;
+    width: 50%;
+    height: 100%;
+    display: block;
+    background-size: cover;
+    top:0;
+}
+
+.service-align-left{
+    left: 0;
+}
+
+.service-align-right{
+    left: 50%;
+}
+
+.service-detail h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: 'Bold';
+    color:#000;
+    line-height:1.2em;
+}
+
+.service-detail h5 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-family: 'RegularItalic';
+    font-weight: 100;
+    line-height:1.4em;
+}
+
+.service-detail p {
+    line-height: 30px;
+}
+
+/* 7. CONTACT */
+.big-text p {
+    font-family: 'Semibold';
+    font-size: 2.8em;
+    color: #fff;
+    line-height: 1.4em;
+}
+
+.form label span {
+    color: #fff;
+}
+
+/* 8. FOOTER */
+.wrap-footer{
+    background-color: #1a1a1a;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.footer p {
+    color:#fff;
+}
+
+.footer img {
+    max-width: 180px;
+}
+
+/* 9. BUTTON BACK TO TOP */
+.cd-top {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: #1780ff url(../img/cd-top-arrow.svg) no-repeat center 50%;
+    visibility: hidden;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 50%;
+}
+
+.cd-top:hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s; 
+}
+
+.cd-top.cd-is-visible {
+    visibility: visible;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100); 
+}
+
+.cd-top.cd-fade-out {
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+}
